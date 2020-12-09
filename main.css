@@ -95,6 +95,11 @@ body {
   list-style: none;
   padding: 0px;
   margin: 1em;
+  max-height: 175px;
+  overflow: auto;
+}
+#list::-webkit-scrollbar {
+    background: black;
 }
 #list li {
   border-bottom: 1px solid white;
