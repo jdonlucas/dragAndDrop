@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link href="main.css" rel="stylesheet">
+</head>
+
+<body>
+    <div class="inputBox">
+        <div id="innerBox">
+            <div id="contentBox" ondragover="allowDrop(event);" ondragleave="leaveDropZone(event);"
+                ondrop="drop(event);"></div>
+            <div id="elementsList">
+                <ul id="header">
+                    <li>
+                        <div>Name</div>
+                        <div>Size</div>
+                    </li>
+                </ul>
+                <ul id="list">
+                </ul>
+            </div>
+            <input class="inputFile" id="file" type="file"/>
+            <label class="inputFile" for="file" ondragover="allowDrop(event);" ondragleave="leaveDropZone(event);"
+                ondrop="drop(event);"></label>
+        </div>
+    </div>
+    <script src="main.js"></script>
+</body>
+
+</html>
